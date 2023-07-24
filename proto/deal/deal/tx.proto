@@ -1,0 +1,7 @@
+syntax = "proto3";
+package deal.deal;
+
+option go_package = "github.com/cooldev900/deal/x/deal/types";
+
+// Msg defines the Msg service.
+service Msg {}

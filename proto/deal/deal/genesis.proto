@@ -1,0 +1,12 @@
+syntax = "proto3";
+package deal.deal;
+
+import "gogoproto/gogo.proto";
+import "deal/deal/params.proto";
+
+option go_package = "github.com/cooldev900/deal/x/deal/types";
+
+// GenesisState defines the deal module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+}

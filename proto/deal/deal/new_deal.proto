@@ -1,0 +1,11 @@
+syntax = "proto3";
+package Cooldev900.deal.deal;
+
+option go_package = "github.com/cooldev900/deal/x/deal/types";
+
+message NewDeal {
+  string dealId = 1; // deal index
+  string owner = 2; // owner index
+  string vendor = 3; // vender index
+  uint64 commission = 4; // commistion index
+}

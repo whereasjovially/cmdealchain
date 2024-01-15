@@ -4,7 +4,6 @@ import (
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/client/flags"
 	"github.com/spf13/cobra"
-
 	"github.com/cooldev900/deal/x/deal/types"
 )
 
@@ -18,9 +17,7 @@ func CmdQueryParams() *cobra.Command {
 			if err != nil {
 				return err
 			}
-
 			queryClient := types.NewQueryClient(clientCtx)
-
 			res, err := queryClient.Params(cmd.Context(), &types.QueryParamsRequest{})
 			if err != nil {
 				return err

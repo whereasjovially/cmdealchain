@@ -5,7 +5,6 @@ import (
 	"github.com/cosmos/cosmos-sdk/codec/types"
 	"github.com/cosmos/cosmos-sdk/std"
 	"github.com/cosmos/cosmos-sdk/x/auth/tx"
-
 	"github.com/cooldev900/deal/app/params"
 )
 

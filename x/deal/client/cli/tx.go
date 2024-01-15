@@ -3,9 +3,7 @@ package cli
 import (
 	"fmt"
 	"time"
-
 	"github.com/spf13/cobra"
-
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cooldev900/deal/x/deal/types"
 )
@@ -13,7 +11,6 @@ import (
 var (
 	DefaultRelativePacketTimeoutTimestamp = uint64((time.Duration(10) * time.Minute).Nanoseconds())
 )
-
 const (
 	flagPacketTimeoutTimestamp = "packet-timeout-timestamp"
 	listSeparator              = ","
@@ -28,8 +25,6 @@ func GetTxCmd() *cobra.Command {
 		SuggestionsMinimumDistance: 2,
 		RunE:                       client.ValidateCmd,
 	}
-
-	// this line is used by starport scaffolding # 1
 
 	return cmd
 }

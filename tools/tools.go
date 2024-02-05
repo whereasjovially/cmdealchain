@@ -1,6 +1,5 @@
 //go:build tools
 package tools
-
 import (
 	_ "github.com/cosmos/gogoproto/protoc-gen-gocosmos"
 	_ "github.com/golang/protobuf/protoc-gen-go"

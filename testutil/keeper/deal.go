@@ -1,5 +1,4 @@
 package keeper
-
 import (
 	"testing"
 	tmdb "github.com/cometbft/cometbft-db"
